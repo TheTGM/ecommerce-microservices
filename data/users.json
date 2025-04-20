@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "numeroDocumento": "1234567890",
+      "nombre": "Admin",
+      "apellido": "User",
+      "correo": "admin@example.com",
+      "contraseña": "$2a$10$UgzPgKiXYhUqKSWKhrHUve.7uzdLQP2TXwKRRgvvYFJZDZrUG2x6.",
+      "rol": "admin",
+      "fecha_registro": "2023-04-15T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "numeroDocumento": "0987654321",
+      "nombre": "Cliente",
+      "apellido": "Usuario",
+      "correo": "cliente@example.com",
+      "contraseña": "$2a$10$UgzPgKiXYhUqKSWKhrHUve.7uzdLQP2TXwKRRgvvYFJZDZrUG2x6.",
+      "rol": "cliente",
+      "fecha_registro": "2023-04-16T14:30:00Z"
+    },
+    {
+      "id": 3,
+      "numeroDocumento": "5678901234",
+      "nombre": "Vendedor",
+      "apellido": "Tienda",
+      "correo": "vendedor@example.com",
+      "contraseña": "$2a$10$UgzPgKiXYhUqKSWKhrHUve.7uzdLQP2TXwKRRgvvYFJZDZrUG2x6.",
+      "rol": "vendedor",
+      "fecha_registro": "2023-04-17T09:15:00Z"
+    }
+  ]

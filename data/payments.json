@@ -1,0 +1,42 @@
+[
+    {
+      "id": 2001,
+      "pedido_id": 1001,
+      "transaccion_id": "PP-1234567890",
+      "respuesta": "Pago procesado exitosamente",
+      "estado": "COMPLETED",
+      "monto": 1299.97,
+      "pasarela": "paypal",
+      "fecha": "2023-04-17T15:32:20Z"
+    },
+    {
+      "id": 2002,
+      "pedido_id": 1002,
+      "transaccion_id": "ST-0987654321",
+      "respuesta": "Pago procesado exitosamente",
+      "estado": "COMPLETED",
+      "monto": 1299.99,
+      "pasarela": "stripe",
+      "fecha": "2023-04-18T10:47:15Z"
+    },
+    {
+      "id": 2003,
+      "pedido_id": 1003,
+      "transaccion_id": "PP-2345678901",
+      "respuesta": "Pago procesado exitosamente",
+      "estado": "COMPLETED",
+      "monto": 289.98,
+      "pasarela": "paypal",
+      "fecha": "2023-04-19T09:22:30Z"
+    },
+    {
+      "id": 2004,
+      "pedido_id": 1004,
+      "transaccion_id": null,
+      "respuesta": "Esperando confirmación del pago",
+      "estado": "PENDING",
+      "monto": 799.99,
+      "pasarela": "stripe",
+      "fecha": "2023-04-20T14:12:00Z"
+    }
+  ]
