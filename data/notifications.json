@@ -1,46 +1,55 @@
 [
-    {
-      "id": 3001,
-      "cliente_id": 2,
-      "mensaje": "Tu pedido #1001 ha sido entregado. ¡Gracias por tu compra!",
-      "tipo": "order_status",
-      "programada_para": "2023-04-17T18:00:00Z",
-      "enviada": true,
-      "fecha_envio": "2023-04-17T18:00:00Z"
-    },
-    {
-      "id": 3002,
-      "cliente_id": 2,
-      "mensaje": "Tu pedido #1002 ha sido enviado y llegará en 3-5 días hábiles.",
-      "tipo": "order_status",
-      "programada_para": "2023-04-18T12:00:00Z",
-      "enviada": true,
-      "fecha_envio": "2023-04-18T12:00:00Z"
-    },
-    {
-      "id": 3003,
-      "cliente_id": 2,
-      "mensaje": "Tu pedido #1003 está siendo procesado. Te notificaremos cuando sea enviado.",
-      "tipo": "order_status",
-      "programada_para": "2023-04-19T10:00:00Z",
-      "enviada": true,
-      "fecha_envio": "2023-04-19T10:00:00Z"
-    },
-    {
-      "id": 3004,
-      "cliente_id": 3,
-      "mensaje": "Tu pedido #1004 está pendiente de pago. Por favor, completa el proceso de pago.",
-      "tipo": "payment_status",
-      "programada_para": "2023-04-20T14:30:00Z",
-      "enviada": true,
-      "fecha_envio": "2023-04-20T14:30:00Z"
-    },
-    {
-      "id": 3005,
-      "cliente_id": 2,
-      "mensaje": "¡Gran oferta! 15% de descuento en todos los productos electrónicos. ¡Solo por hoy!",
-      "tipo": "promotion",
-      "programada_para": "2023-04-21T09:00:00Z",
-      "enviada": false
-    }
-  ]
+  {
+    "id": 3001,
+    "cliente_id": 2,
+    "mensaje": "Tu pedido #1001 ha sido entregado. ¡Gracias por tu compra!",
+    "tipo": "order_status",
+    "programada_para": "2023-04-17T18:00:00Z",
+    "enviada": true,
+    "fecha_envio": "2023-04-17T18:00:00Z"
+  },
+  {
+    "id": 3002,
+    "cliente_id": 2,
+    "mensaje": "Tu pedido #1002 ha sido enviado y llegará en 3-5 días hábiles.",
+    "tipo": "order_status",
+    "programada_para": "2023-04-18T12:00:00Z",
+    "enviada": true,
+    "fecha_envio": "2023-04-18T12:00:00Z"
+  },
+  {
+    "id": 3003,
+    "cliente_id": 2,
+    "mensaje": "Tu pedido #1003 está siendo procesado. Te notificaremos cuando sea enviado.",
+    "tipo": "order_status",
+    "programada_para": "2023-04-19T10:00:00Z",
+    "enviada": true,
+    "fecha_envio": "2023-04-19T10:00:00Z"
+  },
+  {
+    "id": 3004,
+    "cliente_id": 3,
+    "mensaje": "Tu pedido #1004 está pendiente de pago. Por favor, completa el proceso de pago.",
+    "tipo": "payment_status",
+    "programada_para": "2023-04-20T14:30:00Z",
+    "enviada": true,
+    "fecha_envio": "2023-04-20T14:30:00Z"
+  },
+  {
+    "id": 3005,
+    "cliente_id": 2,
+    "mensaje": "¡Gran oferta! 15% de descuento en todos los productos electrónicos. ¡Solo por hoy!",
+    "tipo": "promotion",
+    "programada_para": "2023-04-21T09:00:00Z",
+    "enviada": false
+  },
+  {
+    "id": 3006,
+    "cliente_id": "1",
+    "mensaje": "¡Gran oferta! 15% de descuento en todos los productos electrónicos. ¡Solo por hoy!",
+    "tipo": "promotion",
+    "programada_para": "2025-04-22T03:21:30.773Z",
+    "enviada": false,
+    "fecha_envio": null
+  }
+]

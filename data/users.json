@@ -5,7 +5,7 @@
       "nombre": "Admin",
       "apellido": "User",
       "correo": "admin@example.com",
-      "contraseña": "$2a$10$UgzPgKiXYhUqKSWKhrHUve.7uzdLQP2TXwKRRgvvYFJZDZrUG2x6.",
+      "contraseña": "$2a$12$5yculXVyFmd37xI6L1JJBuzYQ1raQrvB6kngkWtj.jrbkp0QxmBwC",
       "rol": "admin",
       "fecha_registro": "2023-04-15T10:00:00Z"
     },
@@ -15,7 +15,7 @@
       "nombre": "Cliente",
       "apellido": "Usuario",
       "correo": "cliente@example.com",
-      "contraseña": "$2a$10$UgzPgKiXYhUqKSWKhrHUve.7uzdLQP2TXwKRRgvvYFJZDZrUG2x6.",
+      "contraseña": "$2a$12$5yculXVyFmd37xI6L1JJBuzYQ1raQrvB6kngkWtj.jrbkp0QxmBwC",
       "rol": "cliente",
       "fecha_registro": "2023-04-16T14:30:00Z"
     },
@@ -25,7 +25,7 @@
       "nombre": "Vendedor",
       "apellido": "Tienda",
       "correo": "vendedor@example.com",
-      "contraseña": "$2a$10$UgzPgKiXYhUqKSWKhrHUve.7uzdLQP2TXwKRRgvvYFJZDZrUG2x6.",
+      "contraseña": "$2a$12$5yculXVyFmd37xI6L1JJBuzYQ1raQrvB6kngkWtj.jrbkp0QxmBwC",
       "rol": "vendedor",
       "fecha_registro": "2023-04-17T09:15:00Z"
     }

@@ -191,7 +191,7 @@ const notificationsService = {
         fecha_envio: new Date().toISOString()
       };
       
-      return this.createNotification(notificationData);
+      return notificationsService.createNotification(notificationData);
     } catch (error) {
       console.error('Error al enviar notificación de estado de pedido:', error);
       return { success: false, message: 'Error al enviar notificación de estado de pedido' };
@@ -237,7 +237,7 @@ const notificationsService = {
         fecha_envio: new Date().toISOString()
       };
       
-      return this.createNotification(notificationData);
+      return notificationsService.createNotification(notificationData);
     } catch (error) {
       console.error('Error al enviar notificación de estado de pago:', error);
       return { success: false, message: 'Error al enviar notificación de estado de pago' };
@@ -267,7 +267,7 @@ const notificationsService = {
         enviada: false
       };
       
-      return this.createNotification(notificationData);
+      return notificationsService.createNotification(notificationData);
     } catch (error) {
       console.error('Error al enviar notificación promocional:', error);
       return { success: false, message: 'Error al enviar notificación promocional' };
