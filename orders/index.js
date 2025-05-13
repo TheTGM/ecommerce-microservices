@@ -28,7 +28,7 @@ async function startServer() {
     
     // Iniciar el servidor
     app.listen(config.PORT, () => {
-      console.log(`Servidor de órdenes corriendo en puerto ${config.PORT}`);
+      console.log(`Servidor de pagos corriendo en http://localhost:${config.PORT}`);
     });
   } catch (error) {
     console.error('Error al iniciar el servidor:', error);

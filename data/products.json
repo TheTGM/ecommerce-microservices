@@ -5,7 +5,7 @@
     "descripcion": "Smartphone de última generación con 256GB de almacenamiento y 12GB de RAM.",
     "precio": 899.99,
     "imagen_url": "https://via.placeholder.com/300x300.png?text=Smartphone+XYZ",
-    "stock_disponible": 49,
+    "stock_disponible": 48,
     "proveedor": "Electrónicos ABC",
     "costo": 650,
     "activo": true
@@ -27,7 +27,7 @@
     "descripcion": "Audífonos con cancelación de ruido, 30 horas de batería, conexión Bluetooth 5.0.",
     "precio": 199.99,
     "imagen_url": "https://via.placeholder.com/300x300.png?text=Audifonos+Inalambricos",
-    "stock_disponible": 98,
+    "stock_disponible": 96,
     "proveedor": "Audio Premium",
     "costo": 120,
     "activo": true
