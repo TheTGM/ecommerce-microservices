@@ -69,9 +69,9 @@ const authService = {
       saveUsers(users);
       
       // Eliminar contraseña antes de devolver el usuario
-      const { contraseña, ...userWithoutPassword } = newUser;
+      // const { contraseña, ...userWithoutPassword } = newUser;
       
-      return { success: true, user: userWithoutPassword };
+      return { success: true, user: newUser  };
     } catch (error) {
       console.error('Error al registrar usuario:', error);
       return { success: false, message: 'Error al registrar usuario' };

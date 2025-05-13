@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  orders-service:
+    build:
+      context: ./orders
+      dockerfile: Dockerfile
+    container_name: orders-service
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - JWT_SECRET=your-jwt-secret-here
+      - JWT_EXPIRATION=24h
+    volumes:
+      - orders-data:/app/data
+    networks:
+      - microservices-network
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  payments-service:
+    build:
+      context: ./payments
+      dockerfile: Dockerfile
+    container_name: payments-service
+    ports:
+      - "3002:3002"
+    environment:
+      - NODE_ENV=production
+      - PORT=3002
+      - JWT_SECRET=your-jwt-secret-here
+      - JWT_EXPIRATION=24h
+      - ORDERS_SERVICE_URL=http://orders-service:3001
+    volumes:
+      - payments-data:/app/data
+    networks:
+      - microservices-network
+    depends_on:
+      - orders-service
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3002/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+networks:
+  microservices-network:
+    driver: bridge
+
+volumes:
+  orders-data:
+  payments-data:

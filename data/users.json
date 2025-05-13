@@ -1,32 +1,92 @@
 [
-    {
-      "id": 1,
-      "numeroDocumento": "1234567890",
-      "nombre": "Admin",
-      "apellido": "User",
-      "correo": "admin@example.com",
-      "contraseña": "$2a$12$5yculXVyFmd37xI6L1JJBuzYQ1raQrvB6kngkWtj.jrbkp0QxmBwC",
-      "rol": "admin",
-      "fecha_registro": "2023-04-15T10:00:00Z"
-    },
-    {
-      "id": 2,
-      "numeroDocumento": "0987654321",
-      "nombre": "Cliente",
-      "apellido": "Usuario",
-      "correo": "cliente@example.com",
-      "contraseña": "$2a$12$5yculXVyFmd37xI6L1JJBuzYQ1raQrvB6kngkWtj.jrbkp0QxmBwC",
-      "rol": "cliente",
-      "fecha_registro": "2023-04-16T14:30:00Z"
-    },
-    {
-      "id": 3,
-      "numeroDocumento": "5678901234",
-      "nombre": "Vendedor",
-      "apellido": "Tienda",
-      "correo": "vendedor@example.com",
-      "contraseña": "$2a$12$5yculXVyFmd37xI6L1JJBuzYQ1raQrvB6kngkWtj.jrbkp0QxmBwC",
-      "rol": "vendedor",
-      "fecha_registro": "2023-04-17T09:15:00Z"
-    }
-  ]
+  {
+    "id": 1,
+    "numeroDocumento": "1234567890",
+    "nombre": "Admin",
+    "apellido": "User",
+    "correo": "admin@example.com",
+    "contraseña": "$2a$10$.M8sBKEtJqkzntVJRguO4eGWY6EZ8QSJXhTaVqMliaykYL2MdBiEi",
+    "rol": "admin",
+    "fecha_registro": "2023-04-15T10:00:00Z"
+  },
+  {
+    "id": 2,
+    "numeroDocumento": "0987654321",
+    "nombre": "Cliente",
+    "apellido": "Usuario",
+    "correo": "cliente@example.com",
+    "contraseña": "$2a$10$.M8sBKEtJqkzntVJRguO4eGWY6EZ8QSJXhTaVqMliaykYL2MdBiEi",
+    "rol": "cliente",
+    "fecha_registro": "2023-04-16T14:30:00Z"
+  },
+  {
+    "id": 3,
+    "numeroDocumento": "5678901234",
+    "nombre": "Vendedor",
+    "apellido": "Tienda",
+    "correo": "vendedor@example.com",
+    "contraseña": "$2a$10$.M8sBKEtJqkzntVJRguO4eGWY6EZ8QSJXhTaVqMliaykYL2MdBiEi",
+    "rol": "vendedor",
+    "fecha_registro": "2023-04-17T09:15:00Z"
+  },
+  {
+    "id": 4,
+    "numeroDocumento": "1193589382",
+    "nombre": "Teo",
+    "apellido": "Bolivar",
+    "correo": "asdas@gmail.com",
+    "contraseña": "$2a$10$61g0Q1LBSs6KfJQApnjRTOaxvgcU0QPNum3E34Nuw.wTPnGBsK4g6",
+    "rol": "cliente",
+    "fecha_registro": "2025-05-13T02:36:19.950Z"
+  },
+  {
+    "id": 5,
+    "numeroDocumento": "1193589382",
+    "nombre": "Teo",
+    "apellido": "Bolivar",
+    "correo": "asdass@gmail.com",
+    "contraseña": "$2a$10$xDiYKouG5.Xi7AOaJRq8EObHTZIDNMeOrrvujuefQvQz3lYHhquSS",
+    "rol": "admin",
+    "fecha_registro": "2025-05-13T02:37:54.033Z"
+  },
+  {
+    "id": 6,
+    "numeroDocumento": "1193589382",
+    "nombre": "Teo",
+    "apellido": "Bolivar",
+    "correo": "asdasss@gmail.com",
+    "contraseña": "$2a$10$2ghRxE87HLiZYx1ZO/2liOTR92Bwm8klZxCVBTQ7AOcC3jhlLd24u",
+    "rol": "admin",
+    "fecha_registro": "2025-05-13T02:47:01.913Z"
+  },
+  {
+    "id": 7,
+    "numeroDocumento": "1193589382",
+    "nombre": "Teo",
+    "apellido": "Bolivar",
+    "correo": "asdassss@gmail.com",
+    "contraseña": "$2a$10$60uapmlEGk7JEV3c.8PHrejeTFwKdaPH3T2GDxSA93AqLLGhgO.K6",
+    "rol": "admin",
+    "fecha_registro": "2025-05-13T02:47:21.992Z"
+  },
+  {
+    "id": 8,
+    "numeroDocumento": "1193589382",
+    "nombre": "Teo",
+    "apellido": "Bolivar",
+    "correo": "asdasssss@gmail.com",
+    "contraseña": "$2a$10$hKRqQJIX.6x3Myuhct8uGud/yxqlyShHP28Ce0.EDgqEZ/SaROSJW",
+    "rol": "admin",
+    "fecha_registro": "2025-05-13T02:47:33.384Z"
+  },
+  {
+    "id": 9,
+    "numeroDocumento": "1193589382",
+    "nombre": "Teo",
+    "apellido": "Bolivar",
+    "correo": "asdassssas@gmail.com",
+    "contraseña": "$2a$10$.M8sBKEtJqkzntVJRguO4eGWY6EZ8QSJXhTaVqMliaykYL2MdBiEi",
+    "rol": "admin",
+    "fecha_registro": "2025-05-13T02:47:47.310Z"
+  }
+]

@@ -5,8 +5,7 @@ const morgan = require('morgan');
 // Importar rutas
 const authRoutes = require('./routes/auth.routes');
 const productsRoutes = require('./routes/products.routes');
-const ordersRoutes = require('./routes/orders.routes');
-const paymentsRoutes = require('./routes/payments.routes');
+//const paymentsRoutes = require('./routes/payments.routes');
 const notificationsRoutes = require('./routes/notifications.routes');
 
 // Configuración
@@ -24,8 +23,7 @@ app.use(express.urlencoded({ extended: false }));
 // Rutas
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productsRoutes);
-app.use('/api/orders', ordersRoutes);
-app.use('/api/payments', paymentsRoutes);
+//app.use('/api/payments', paymentsRoutes);
 app.use('/api/notifications', notificationsRoutes);
 
 // Ruta de bienvenida

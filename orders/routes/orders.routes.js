@@ -1,16 +1,17 @@
+// routes/orders.routes.js
 const express = require('express');
 const router = express.Router();
 const ordersService = require('../services/orders.service');
-const { verifyToken, isAdmin, hasRole } = require('../middlewares/auth.middleware');
+const { verifyToken, isAdmin, hasRole } = require('../../middlewares/auth.middleware');
 
 /**
  * @route GET /api/orders
  * @desc Obtener todas las órdenes (solo admin)
  * @access Private/Admin
  */
-router.get('/', [verifyToken, isAdmin], (req, res) => {
+router.get('/', [verifyToken, isAdmin], async (req, res) => {
   try {
-    const result = ordersService.getAllOrders();
+    const result = await ordersService.getAllOrders();
     
     if (!result.success) {
       return res.status(400).json({ status: 'error', message: result.message });
@@ -34,10 +35,10 @@ router.get('/', [verifyToken, isAdmin], (req, res) => {
  * @desc Obtener órdenes del cliente autenticado
  * @access Private
  */
-router.get('/my', verifyToken, (req, res) => {
+router.get('/my', verifyToken, async (req, res) => {
   try {
     const clientId = req.user.id;
-    const result = ordersService.getClientOrders(clientId);
+    const result = await ordersService.getClientOrders(clientId);
     
     if (!result.success) {
       return res.status(400).json({ status: 'error', message: result.message });
@@ -61,10 +62,10 @@ router.get('/my', verifyToken, (req, res) => {
  * @desc Obtener una orden por ID
  * @access Private
  */
-router.get('/:id', verifyToken, (req, res) => {
+router.get('/:id', verifyToken, async (req, res) => {
   try {
     const orderId = parseInt(req.params.id);
-    const result = ordersService.getOrderById(orderId);
+    const result = await ordersService.getOrderById(orderId);
     
     if (!result.success) {
       return res.status(404).json({ status: 'error', message: result.message });
@@ -129,7 +130,7 @@ router.post('/', verifyToken, async (req, res) => {
  * @desc Actualizar el estado de una orden
  * @access Private/Admin
  */
-router.patch('/:id/status', [verifyToken, isAdmin], (req, res) => {
+router.patch('/:id/status', [verifyToken, isAdmin], async (req, res) => {
   try {
     const orderId = parseInt(req.params.id);
     const { status } = req.body;
@@ -141,7 +142,7 @@ router.patch('/:id/status', [verifyToken, isAdmin], (req, res) => {
       });
     }
     
-    const result = ordersService.updateOrderStatus(orderId, status);
+    const result = await ordersService.updateOrderStatus(orderId, status);
     
     if (!result.success) {
       return res.status(400).json({ status: 'error', message: result.message });
@@ -166,12 +167,12 @@ router.patch('/:id/status', [verifyToken, isAdmin], (req, res) => {
  * @desc Cancelar una orden
  * @access Private
  */
-router.delete('/:id', verifyToken, (req, res) => {
+router.delete('/:id', verifyToken, async (req, res) => {
   try {
     const orderId = parseInt(req.params.id);
     
     // Verificar si el usuario tiene permiso para cancelar la orden
-    const orderCheck = ordersService.getOrderById(orderId);
+    const orderCheck = await ordersService.getOrderById(orderId);
     
     if (!orderCheck.success) {
       return res.status(404).json({ status: 'error', message: orderCheck.message });
@@ -185,7 +186,7 @@ router.delete('/:id', verifyToken, (req, res) => {
       });
     }
     
-    const result = ordersService.cancelOrder(orderId);
+    const result = await ordersService.cancelOrder(orderId);
     
     if (!result.success) {
       return res.status(400).json({ status: 'error', message: result.message });
@@ -198,6 +199,43 @@ router.delete('/:id', verifyToken, (req, res) => {
     });
   } catch (error) {
     console.error('Error al cancelar orden:', error);
+    res.status(500).json({
+      status: 'error',
+      message: 'Error interno del servidor'
+    });
+  }
+});
+
+/**
+ * @route PATCH /api/orders/:id/payment-status
+ * @desc Actualizar el estado de pago de una orden
+ * @access Private/Service (Solo para comunicación entre servicios)
+ */
+router.patch('/:id/payment-status', verifyToken, async (req, res) => {
+  try {
+    const orderId = parseInt(req.params.id);
+    const { paymentStatus } = req.body;
+    
+    if (!paymentStatus) {
+      return res.status(400).json({
+        status: 'error',
+        message: 'El estado de pago es requerido'
+      });
+    }
+    
+    const result = await ordersService.updatePaymentStatus(orderId, paymentStatus);
+    
+    if (!result.success) {
+      return res.status(400).json({ status: 'error', message: result.message });
+    }
+    
+    res.status(200).json({
+      status: 'success',
+      message: 'Estado de pago actualizado exitosamente',
+      order: result.order
+    });
+  } catch (error) {
+    console.error('Error al actualizar estado de pago:', error);
     res.status(500).json({
       status: 'error',
       message: 'Error interno del servidor'
