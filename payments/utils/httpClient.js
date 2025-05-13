@@ -7,7 +7,8 @@ class HttpClient {
       baseURL,
       timeout: 5000,
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkBleGFtcGxlLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NzExMTYwMywiZXhwIjoxNzQ5MjcxNjAzfQ.MxsT5Yzukoh5TH83c0IIozqcwYWkdUcc_F8Ar_NfOZ0'
       }
     });
 

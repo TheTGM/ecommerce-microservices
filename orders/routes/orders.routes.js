@@ -224,6 +224,8 @@ router.patch('/:id/payment-status', verifyToken, async (req, res) => {
     }
     
     const result = await ordersService.updatePaymentStatus(orderId, paymentStatus);
+
+    console.log(result)
     
     if (!result.success) {
       return res.status(400).json({ status: 'error', message: result.message });

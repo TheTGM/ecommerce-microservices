@@ -1,90 +1,90 @@
 [
-    {
-      "id": 1,
-      "nombre": "Smartphone XYZ",
-      "descripcion": "Smartphone de última generación con 256GB de almacenamiento y 12GB de RAM.",
-      "precio": 899.99,
-      "imagen_url": "https://via.placeholder.com/300x300.png?text=Smartphone+XYZ",
-      "stock_disponible": 50,
-      "proveedor": "Electrónicos ABC",
-      "costo": 650.00,
-      "activo": true
-    },
-    {
-      "id": 2,
-      "nombre": "Laptop Ultra",
-      "descripcion": "Laptop de 15.6 pulgadas, procesador de última generación, 16GB RAM, 1TB SSD.",
-      "precio": 1299.99,
-      "imagen_url": "https://via.placeholder.com/300x300.png?text=Laptop+Ultra",
-      "stock_disponible": 25,
-      "proveedor": "Computadoras Pro",
-      "costo": 900.00,
-      "activo": true
-    },
-    {
-      "id": 3,
-      "nombre": "Audífonos Inalámbricos",
-      "descripcion": "Audífonos con cancelación de ruido, 30 horas de batería, conexión Bluetooth 5.0.",
-      "precio": 199.99,
-      "imagen_url": "https://via.placeholder.com/300x300.png?text=Audifonos+Inalambricos",
-      "stock_disponible": 100,
-      "proveedor": "Audio Premium",
-      "costo": 120.00,
-      "activo": true
-    },
-    {
-      "id": 4,
-      "nombre": "Smartwatch Fitness",
-      "descripcion": "Reloj inteligente con monitoreo de actividad física, sueño y frecuencia cardíaca.",
-      "precio": 159.99,
-      "imagen_url": "https://via.placeholder.com/300x300.png?text=Smartwatch+Fitness",
-      "stock_disponible": 75,
-      "proveedor": "Gadgets Tech",
-      "costo": 90.00,
-      "activo": true
-    },
-    {
-      "id": 5,
-      "nombre": "Tablet Educativa",
-      "descripcion": "Tablet de 10 pulgadas ideal para estudiantes, 128GB de almacenamiento, 8GB RAM.",
-      "precio": 349.99,
-      "imagen_url": "https://via.placeholder.com/300x300.png?text=Tablet+Educativa",
-      "stock_disponible": 40,
-      "proveedor": "Educación Digital",
-      "costo": 220.00,
-      "activo": true
-    },
-    {
-      "id": 6,
-      "nombre": "Cámara DSLR Profesional",
-      "descripcion": "Cámara profesional de 24MP, grabación 4K, incluye lente 18-55mm.",
-      "precio": 799.99,
-      "imagen_url": "https://via.placeholder.com/300x300.png?text=Camara+DSLR",
-      "stock_disponible": 20,
-      "proveedor": "Fotografía Elite",
-      "costo": 550.00,
-      "activo": true
-    },
-    {
-      "id": 7,
-      "nombre": "Consola de Videojuegos",
-      "descripcion": "Consola de última generación con 1TB de almacenamiento, incluye un control.",
-      "precio": 499.99,
-      "imagen_url": "https://via.placeholder.com/300x300.png?text=Consola+Videojuegos",
-      "stock_disponible": 30,
-      "proveedor": "Gaming Pro",
-      "costo": 350.00,
-      "activo": true
-    },
-    {
-      "id": 8,
-      "nombre": "Altavoz Inteligente",
-      "descripcion": "Altavoz con asistente virtual, sonido 360°, compatible con múltiples plataformas.",
-      "precio": 129.99,
-      "imagen_url": "https://via.placeholder.com/300x300.png?text=Altavoz+Inteligente",
-      "stock_disponible": 60,
-      "proveedor": "Smart Home",
-      "costo": 80.00,
-      "activo": true
-    }
-  ]
+  {
+    "id": 1,
+    "nombre": "Smartphone XYZ",
+    "descripcion": "Smartphone de última generación con 256GB de almacenamiento y 12GB de RAM.",
+    "precio": 899.99,
+    "imagen_url": "https://via.placeholder.com/300x300.png?text=Smartphone+XYZ",
+    "stock_disponible": 49,
+    "proveedor": "Electrónicos ABC",
+    "costo": 650,
+    "activo": true
+  },
+  {
+    "id": 2,
+    "nombre": "Laptop Ultra",
+    "descripcion": "Laptop de 15.6 pulgadas, procesador de última generación, 16GB RAM, 1TB SSD.",
+    "precio": 1299.99,
+    "imagen_url": "https://via.placeholder.com/300x300.png?text=Laptop+Ultra",
+    "stock_disponible": 25,
+    "proveedor": "Computadoras Pro",
+    "costo": 900,
+    "activo": true
+  },
+  {
+    "id": 3,
+    "nombre": "Audífonos Inalámbricos",
+    "descripcion": "Audífonos con cancelación de ruido, 30 horas de batería, conexión Bluetooth 5.0.",
+    "precio": 199.99,
+    "imagen_url": "https://via.placeholder.com/300x300.png?text=Audifonos+Inalambricos",
+    "stock_disponible": 98,
+    "proveedor": "Audio Premium",
+    "costo": 120,
+    "activo": true
+  },
+  {
+    "id": 4,
+    "nombre": "Smartwatch Fitness",
+    "descripcion": "Reloj inteligente con monitoreo de actividad física, sueño y frecuencia cardíaca.",
+    "precio": 159.99,
+    "imagen_url": "https://via.placeholder.com/300x300.png?text=Smartwatch+Fitness",
+    "stock_disponible": 75,
+    "proveedor": "Gadgets Tech",
+    "costo": 90,
+    "activo": true
+  },
+  {
+    "id": 5,
+    "nombre": "Tablet Educativa",
+    "descripcion": "Tablet de 10 pulgadas ideal para estudiantes, 128GB de almacenamiento, 8GB RAM.",
+    "precio": 349.99,
+    "imagen_url": "https://via.placeholder.com/300x300.png?text=Tablet+Educativa",
+    "stock_disponible": 40,
+    "proveedor": "Educación Digital",
+    "costo": 220,
+    "activo": true
+  },
+  {
+    "id": 6,
+    "nombre": "Cámara DSLR Profesional",
+    "descripcion": "Cámara profesional de 24MP, grabación 4K, incluye lente 18-55mm.",
+    "precio": 799.99,
+    "imagen_url": "https://via.placeholder.com/300x300.png?text=Camara+DSLR",
+    "stock_disponible": 20,
+    "proveedor": "Fotografía Elite",
+    "costo": 550,
+    "activo": true
+  },
+  {
+    "id": 7,
+    "nombre": "Consola de Videojuegos",
+    "descripcion": "Consola de última generación con 1TB de almacenamiento, incluye un control.",
+    "precio": 499.99,
+    "imagen_url": "https://via.placeholder.com/300x300.png?text=Consola+Videojuegos",
+    "stock_disponible": 30,
+    "proveedor": "Gaming Pro",
+    "costo": 350,
+    "activo": true
+  },
+  {
+    "id": 8,
+    "nombre": "Altavoz Inteligente",
+    "descripcion": "Altavoz con asistente virtual, sonido 360°, compatible con múltiples plataformas.",
+    "precio": 129.99,
+    "imagen_url": "https://via.placeholder.com/300x300.png?text=Altavoz+Inteligente",
+    "stock_disponible": 60,
+    "proveedor": "Smart Home",
+    "costo": 80,
+    "activo": true
+  }
+]

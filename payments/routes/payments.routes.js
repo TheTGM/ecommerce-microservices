@@ -164,17 +164,15 @@ router.post('/process', verifyToken, async (req, res) => {
 
     const result = await paymentsService.processPayment(orderId, gateway);
 
-    result.then((response) => {
-      if (!response.success) {
-        return res.status(400).json({ status: 'error', message: response.message });
-      }
+    if (!result.success) {
+      return res.status(400).json({ status: 'error', message: result.message });
+    }
 
-      res.status(200).json({
-        status: 'success',
-        message: response.message,
-        payment: response.payment
-      });
-    })
+    res.status(200).json({
+      status: 'success',
+      message: result.message,
+      payment: result.payment
+    });
 
 
   } catch (error) {
@@ -217,17 +215,16 @@ router.delete('/:id', verifyToken, async (req, res) => {
 
     const result = await paymentsService.cancelPayment(paymentId);
 
-    result.then((response) => {
-      if (!response.success) {
-        return res.status(400).json({ status: 'error', message: response.message });
-      }
 
-      res.status(200).json({
-        status: 'success',
-        message: response.message,
-        payment: response.payment
-      });
-    })
+    if (!result.success) {
+      return res.status(400).json({ status: 'error', message: result.message });
+    }
+
+    res.status(200).json({
+      status: 'success',
+      message: result.message,
+      payment: result.payment
+    });
   } catch (error) {
     console.error('Error al cancelar pago:', error);
     res.status(500).json({
@@ -249,17 +246,16 @@ router.post('/:id/refund', [verifyToken, isAdmin], async (req, res) => {
 
     const result = await paymentsService.processRefund(paymentId, amount);
 
-    result.then((response) => {
-      if (!response.success) {
-        return res.status(400).json({ status: 'error', message: response.message });
-      }
-      res.status(200).json({
-        status: 'success',
-        message: response.message,
-        refund: response.refund,
-        payment: response.payment
-      });
-    })
+
+    if (!result.success) {
+      return res.status(400).json({ status: 'error', message: result.message });
+    }
+    res.status(200).json({
+      status: 'success',
+      message: result.message,
+      refund: result.refund,
+      payment: result.payment
+    });
 
   } catch (error) {
     console.error('Error al procesar reembolso:', error);

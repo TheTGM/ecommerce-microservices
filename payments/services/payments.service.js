@@ -294,7 +294,7 @@ const paymentsService = {
         return { success: false, message: 'Datos de orden no proporcionados' };
       }
       
-      const order = orderResult;
+      const order = orderResult.order;
       
       // Verificar si la orden ya fue pagada
       const existingPayment = await Payment.findOne({

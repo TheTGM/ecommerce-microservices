@@ -3,7 +3,7 @@ require("dotenv").config();
 module.exports = {
   PORT: 3002,
   JWT_SECRET: process.env.JWT_SECRET || "secreto-del-jwt-para-desarrollo",
-  JWT_EXPIRATION: process.env.JWT_EXPIRATION || "24h",
+  JWT_EXPIRATION: process.env.JWT_EXPIRATION || "600h",
 
   // Opciones para bcrypt
   SALT_ROUNDS: 10,
